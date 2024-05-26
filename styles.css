@@ -1,3 +1,36 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.container {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+}
+
+.board-item {
+    background-color: lightblue;
+    width: 125px;
+    height: 125px;
+    opacity: 70%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+.board-item:hover {
+    opacity: 100%;
+}
+
+.locked {
+    opacity: 100%;
+    cursor:auto;
+}
